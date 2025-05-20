@@ -18,9 +18,20 @@ int main()
         ar[i] = ar[i + 1];
     }
 
+    // for (int i = ind; i < n-1; i++)
+    // {
+    //     a[i]=a[i+1];
+    // }
+    // n--;
+
     for (int i = 0; i < n - 1; i++)
     {
         printf("%d ", ar[i]);
     }
     return 0;
 }
+
+// for (int i = 0; i < n; i++)
+// {
+//     printf("%d ", ar[i]);
+// }
