@@ -10,14 +10,14 @@ int main()
         scanf("%d", &ar[i]);
     }
 
-    int ind, val;
-    scanf("%d %d", &ind, &val);
+    int pos, val;
+    scanf("%d %d", &pos, &val);
 
-    for (int i = n; i >= ind + 1; i--)
+    for (int i = n; i >= pos + 1; i--)
     {
         ar[i] = ar[i - 1];
     }
-    ar[ind] = val;
+    ar[pos] = val;
 
     for (int i = 0; i <= n; i++)
     {
