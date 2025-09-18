@@ -4,11 +4,13 @@
 int main()
 {
     char s[100];
-    
-    // Using fgets to read a line of text including spaces
     fgets(s, sizeof(s), stdin);
+    // Using fgets to read a line of text including spaces
+
+    int sz = strlen(s);
+
     printf("%s\n", s);
-    printf("Length: %d", strlen(s));
+    printf("Length: %d", sz);
 
     return 0;
 }
