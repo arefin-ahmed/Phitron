@@ -1,16 +1,19 @@
 #include <stdio.h>
-#include <string.h>
 int main()
 {
-    char s[101];
-    int length = strlen(s);
+    int n;
+    int arr[101];
 
-    scanf("%d", &length);
-    //printf("%d", length);
+    scanf("%d", &n);
 
-    for (int i = length - 1; i >= 0; i--)
+    for (int i = 0; i < n; i++)
     {
-        printf("%c", s[i]);   
+        scanf("%s", &arr[i]);
+    }
+
+    for (int i = n - 1; i >= 0; i--)
+    {
+        printf("%s ", &arr[i]);
     }
 
     return 0;
