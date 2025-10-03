@@ -1,35 +1,30 @@
 #include <stdio.h>
+#include <string.h>
+
 int main()
 {
     int n;
     scanf("%d", &n);
 
-    char arr[n + 1];
+    char s[n+1];
+    scanf("%s", s);   
 
-    for (int i = 0; i < n; i++)
+    int n = strlen(s);
+    int isPalindrome = 1; 
+
+    for (int i = 0; i < n / 2; i++)
     {
-        scanf(" %c", &arr[i]);
-    }
-
-    int isPalindrome = 1;
-
-    for (int i = 0; i <= n / 2; i++)
-    {
-        if (arr[i] != arr[n - i - 1])
+        if (s[i] != s[n - 1 - i])
         {
-            isPalindrome = 0;
+            isPalindrome = 0; 
             break;
         }
     }
 
     if (isPalindrome)
-    {
-        printf("YES");
-    }
+        printf("YES\n");
     else
-    {
-        printf("NO");
-    }
+        printf("NO\n");
 
     return 0;
 }
