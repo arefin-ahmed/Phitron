@@ -3,8 +3,7 @@
 int main()
 {
     char s[100];
-    fgets(s, sizeof(s),stdin);
-    scanf("%s", s);
+    fgets(s, sizeof(s), stdin);
 
     int count = 0;
 
@@ -15,5 +14,5 @@ int main()
     printf("%s\n", s);
     printf("Length: %d", count);
 
-    return 0 ;
+    return 0;
 }
