@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-     int i;
+     int ;
 
     return 0;
 }
