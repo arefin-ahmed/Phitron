@@ -11,9 +11,9 @@ int main()
 
     for (int i = 0; i <= length2; i++)
     {
-        s1[i + length1] = s2[i];  // // concat s2 into s1,  2nd element show
+        s1[i + length1] = s2[i];  // // concat s2 into s1,  both element show
     }
-
+ 
     printf("%s %s", s1, s2);
     return 0;
 }
