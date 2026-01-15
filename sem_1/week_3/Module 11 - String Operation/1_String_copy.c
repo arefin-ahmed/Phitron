@@ -12,6 +12,6 @@ int main()
         a[i] = b[i];
     }
 
-    printf("%s %s", a, b);  // for printing both strings
+    printf("%s %s", a, b);  // print the 2nd string 2 times
     return 0;
 }
